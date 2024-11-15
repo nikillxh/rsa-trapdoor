@@ -12,8 +12,8 @@ fn main() {
     io::stdin().read_line(&mut input_1).expect("Failed to read input");
     io::stdin().read_line(&mut input_2).expect("Failed to read input");
 
-    let mut a = input_1.trim().parse::<i64>().expect("Please enter a valid number");
-    let mut b = input_2.trim().parse::<i64>().expect("Please enter a valid number");
+    let a = input_1.trim().parse::<i64>().expect("Please enter a valid number");
+    let b = input_2.trim().parse::<i64>().expect("Please enter a valid number");
 
     println!("Performing homomorphic Encryption...");
     trapdoor::trapdoor(a,b);
