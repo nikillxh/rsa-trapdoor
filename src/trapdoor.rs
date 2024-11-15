@@ -2,7 +2,7 @@ use std::io;
 
 pub fn trapdoor(a: i64, b:i64) {
     // Generating crate::primes of bits each
-    let bits: i64 = 64;
+    let bits: i64 = 512;
     let p: i64 = crate::prime::rand_prime(bits);
     let q: i64 = crate::prime::rand_prime(bits);
 
